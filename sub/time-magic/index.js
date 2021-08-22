@@ -72,6 +72,7 @@ exports.getDescription = function(time, option) {
     }
   }
   if (option) {
+    // eslint-disable-next-line no-undef
     return formatTime(time, option)
   } else {
     return d.getMonth() + 1 + '月' + d.getDate() + '日' + d.getHours() + '时' + d.getMinutes() + '分'
